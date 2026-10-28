@@ -8,7 +8,7 @@ Aplicación para **Android Studio**, escrita en Kotlin y Jetpack Compose. Consum
 2. Iniciar la API desde PowerShell, en esta carpeta: `powershell -ExecutionPolicy Bypass -File .\INICIAR-API.ps1`. Requiere Python 3.10 o superior. La primera ejecución instala dependencias y crea la base de datos.
 3. Mantener esa terminal abierta. Comprobar `http://127.0.0.1:8000/serie` en el navegador.
 4. Seleccionar el emulador Pixel 7 y pulsar **Run app**. Android usa `http://10.0.2.2:8000/` para acceder al servidor de la PC.
-5. En **Series** probar Agregar, Editar y Eliminar. En **Dispensalud** hacer lo mismo con medicamentos. **Bookshelf** consulta Google Books por Internet.
+5. En Android 17 o superior, al entrar a Series o Dispensalud pulsar **Permitir conexión local** y aceptar el permiso del sistema. Después probar Agregar, Editar y Eliminar. **Bookshelf** consulta Google Books por Internet.
 
 El proyecto Android tiene su propio Gradle Wrapper. Se usa la combinación de AGP, Gradle y SDK instalada en esta PC: AGP 9.3.3, Gradle 9.5.0, SDK 37 y plugin Compose 2.2.10. `local.properties` no se versiona: Android Studio lo genera para cada computadora. Java se obtiene del JBR de Android Studio.
 
@@ -54,6 +54,7 @@ El ejercicio adapta los campos de la entidad `Medicamento` de DispensaludCRUD a 
 - No hay `delay(100)` para esperar datos. Las funciones `suspend` esperan la llamada de red.
 - La cancelación del diálogo ocurre en un callback, sin navegar durante la composición.
 - ViewModel conserva el estado al rotar y los botones se bloquean durante las mutaciones.
+- Android 17 requiere `ACCESS_LOCAL_NETWORK`: se declara y solicita antes de conectar con Django. Si se rechaza, la app explica cómo habilitarlo.
 - La edición usa un formulario dentro de la sección en lugar de rutas separadas por cada acción.
 
 ## Probar en teléfono físico

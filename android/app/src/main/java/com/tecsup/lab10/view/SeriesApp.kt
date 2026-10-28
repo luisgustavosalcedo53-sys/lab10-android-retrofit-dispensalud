@@ -48,8 +48,8 @@ fun SeriesApp() {
                     Text("03  Bookshelf · Explora libros de Google Books", style = MaterialTheme.typography.bodyMedium)
                 }
             }
-            composable("series") { ScreenSeries(crudViewModel("series") { SeriesRepository() }) }
-            composable("medicamentos") { ScreenSeries(crudViewModel("medicamentos") { MedicamentosRepository() }) }
+            composable("series") { LocalNetworkGate { ScreenSeries(crudViewModel("series") { SeriesRepository() }) } }
+            composable("medicamentos") { LocalNetworkGate { ScreenSeries(crudViewModel("medicamentos") { MedicamentosRepository() }) } }
             composable("bookshelf") { ScreenBookshelf() }
         }
     }

@@ -6,6 +6,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import android.graphics.Bitmap
 import org.junit.Rule
+import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.File
@@ -14,6 +15,13 @@ import java.io.File
 @RunWith(AndroidJUnit4::class)
 class CrudEndToEndTest {
     @get:Rule val compose = createAndroidComposeRule<MainActivity>()
+    @Before fun allowLocalServerForTest() {
+        if (android.os.Build.VERSION.SDK_INT >= 37) {
+            InstrumentationRegistry.getInstrumentation().uiAutomation.executeShellCommand(
+                "pm grant com.tecsup.lab10 android.permission.ACCESS_LOCAL_NETWORK"
+            ).use { descriptor -> java.io.FileInputStream(descriptor.fileDescriptor).use { it.readBytes() } }
+        }
+    }
     private fun pause() { Thread.sleep(900) }
     private fun waitFor(tag: String) {
         compose.waitUntil(30000) { compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty() }
