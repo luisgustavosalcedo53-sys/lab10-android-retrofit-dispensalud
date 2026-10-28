@@ -1,0 +1,8 @@
+**/.gradle/
+**/build/
+**/local.properties
+**/.idea/
+**/__pycache__/
+**/.venv/
+**/*.sqlite3
+*.log
