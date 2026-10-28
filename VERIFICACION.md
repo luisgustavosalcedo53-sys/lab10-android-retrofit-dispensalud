@@ -15,9 +15,9 @@
 
 Las pruebas de interfaz se ejecutaron en el emulador Pixel 7 con Android 37.1. Fue necesario iniciar sin restaurar snapshot, asignar 4096 MB de RAM, usar Espresso 3.7.0 y conceder `ACCESS_LOCAL_NETWORK`. Las primeras ejecuciones fallidas ayudaron a detectar estas condiciones y no se presentan como resultados aprobados.
 
-## Evidencias entregadas fuera del repositorio
+## Evidencias incluidas en el repositorio
 
-En `../Evidencias/`:
+En `evidencias/`:
 
 - `01-CRUD-series.mp4`: recorrido real por el CRUD de series.
 - `02-CRUD-dispensalud.mp4`: recorrido real por el CRUD de medicamentos.
@@ -31,7 +31,7 @@ Los videos no tienen narración y se recortaron para retirar la espera de arranq
 
 ## Pendientes de entrega
 
-1. **Subir los commits:** el repositorio Git local tiene historial, pero no hay una URL remota proporcionada ni se ha ejecutado un push. Compartir la URL y verificar la autenticación para completar ese criterio de la rúbrica.
+1. **Acceso docente:** repositorio creado en https://github.com/luisgustavosalcedo53-sys/lab10-android-retrofit-dispensalud. Es privado: conceder acceso al docente antes de entregar el enlace. La publicación del historial se verifica comparando el commit local con `origin/main`.
 2. **Bookshelf con datos reales:** implementado y probado con un servicio de prueba inyectado. La API pública devolvió HTTP 429 en las consultas reales. La carga de libros y portadas y su video adicional siguen pendientes de una respuesta exitosa del servicio.
 3. **Informe personal:** el borrador separado contiene explicación técnica, reflexión propuesta y uso de IA. Completar datos personales, adaptar la observación y añadir enlaces definitivos.
 4. **Puntualidad y calificación:** dependen del plazo y de la evaluación docente; no se pueden garantizar desde el código.

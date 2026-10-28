@@ -1,0 +1,169 @@
+[
+  {
+    "method": "GET",
+    "path": "/",
+    "request": null,
+    "status": 200,
+    "response": {
+      "mensaje": "Servidor activo",
+      "series": "/serie",
+      "medicamentos": "/medicamento"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/serie",
+    "request": {
+      "name": "Verificacion API temporal",
+      "release_date": "2026-10-27",
+      "rating": 8,
+      "category": "Demo"
+    },
+    "status": 201,
+    "response": {
+      "id": 3,
+      "name": "Verificacion API temporal",
+      "release_date": "2026-10-27",
+      "rating": 8,
+      "category": "Demo"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/serie/3",
+    "request": null,
+    "status": 200,
+    "response": {
+      "id": 3,
+      "name": "Verificacion API temporal",
+      "release_date": "2026-10-27",
+      "rating": 8,
+      "category": "Demo"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/serie/3",
+    "request": {
+      "name": "Verificacion API temporal",
+      "release_date": "2026-11-01",
+      "rating": 8,
+      "category": "Demo"
+    },
+    "status": 200,
+    "response": {
+      "id": 3,
+      "name": "Verificacion API temporal",
+      "release_date": "2026-11-01",
+      "rating": 8,
+      "category": "Demo"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/serie/3",
+    "request": null,
+    "status": 200,
+    "response": {
+      "id": 3,
+      "name": "Verificacion API temporal",
+      "release_date": "2026-11-01",
+      "rating": 8,
+      "category": "Demo"
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/serie/3",
+    "request": null,
+    "status": 204,
+    "response": null
+  },
+  {
+    "method": "GET",
+    "path": "/serie/3",
+    "request": null,
+    "status": 404,
+    "response": {
+      "detail": "No Serie matches the given query."
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/medicamento",
+    "request": {
+      "nombre": "Verificacion API temporal",
+      "dosis": "Prueba",
+      "frecuencia": "Prueba",
+      "cantidad": 10
+    },
+    "status": 201,
+    "response": {
+      "id": 2,
+      "nombre": "Verificacion API temporal",
+      "dosis": "Prueba",
+      "frecuencia": "Prueba",
+      "cantidad": 10
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/medicamento/2",
+    "request": null,
+    "status": 200,
+    "response": {
+      "id": 2,
+      "nombre": "Verificacion API temporal",
+      "dosis": "Prueba",
+      "frecuencia": "Prueba",
+      "cantidad": 10
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/medicamento/2",
+    "request": {
+      "nombre": "Verificacion API temporal",
+      "dosis": "Prueba",
+      "frecuencia": "Prueba",
+      "cantidad": 35
+    },
+    "status": 200,
+    "response": {
+      "id": 2,
+      "nombre": "Verificacion API temporal",
+      "dosis": "Prueba",
+      "frecuencia": "Prueba",
+      "cantidad": 35
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/medicamento/2",
+    "request": null,
+    "status": 200,
+    "response": {
+      "id": 2,
+      "nombre": "Verificacion API temporal",
+      "dosis": "Prueba",
+      "frecuencia": "Prueba",
+      "cantidad": 35
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/medicamento/2",
+    "request": null,
+    "status": 204,
+    "response": null
+  },
+  {
+    "method": "GET",
+    "path": "/medicamento/2",
+    "request": null,
+    "status": 404,
+    "response": {
+      "detail": "No Medicamento matches the given query."
+    }
+  }
+]

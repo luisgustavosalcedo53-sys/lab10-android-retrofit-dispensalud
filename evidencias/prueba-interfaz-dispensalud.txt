@@ -1,0 +1,8 @@
+
+com.tecsup.lab10.CrudEndToEndTest:.
+
+Time: 28.084
+
+OK (1 test)
+
+

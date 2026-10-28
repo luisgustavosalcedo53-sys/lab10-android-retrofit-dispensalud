@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tecsup.lab10.ApiContractTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-28T09:21:22.014Z" hostname="LAPTOP-V27B0TLL" time="0.775">
+  <properties/>
+  <testcase name="bookshelfRepositorySupportsSearchAndDetail" classname="com.tecsup.lab10.ApiContractTest" time="0.644"/>
+  <testcase name="seriesContractUsesCorrectVerbsPathsAndJson" classname="com.tecsup.lab10.ApiContractTest" time="0.07"/>
+  <testcase name="medicationCrudUsesItsOwnEndpoint" classname="com.tecsup.lab10.ApiContractTest" time="0.037"/>
+  <testcase name="rejectsImpossibleDatesAndInvalidNumbers" classname="com.tecsup.lab10.ApiContractTest" time="0.004"/>
+  <testcase name="httpFailureIsNotReportedAsSuccess" classname="com.tecsup.lab10.ApiContractTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

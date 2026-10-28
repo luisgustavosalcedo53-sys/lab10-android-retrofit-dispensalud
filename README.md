@@ -73,14 +73,13 @@ Con Django y un emulador activos: `./gradlew.bat connectedDebugAndroidTest`. Las
 
 ## Commits y entrega
 
-El repositorio Git local contiene avances reales. Revisar con `git log --oneline`. Para subirlo, crear un repositorio vacío en tu cuenta y ejecutar desde esta carpeta:
+Repositorio GitHub: https://github.com/luisgustavosalcedo53-sys/lab10-android-retrofit-dispensalud
 
-```powershell
-git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-git push -u origin main
-```
+El historial registra los avances reales del laboratorio. Revisar con `git log --oneline` o en la pestaña de commits de GitHub. El repositorio es privado; para que el docente pueda verlo, debe tener acceso como colaborador o cambiar la visibilidad cuando corresponda.
 
-La subida requiere tu URL de repositorio y una sesión autenticada. No se considera realizada solamente por tener commits locales. El informe y los videos son entregables separados; revisar `VERIFICACION.md` para distinguir lo probado de lo pendiente.
+- `evidencias/`: videos de los CRUD, capturas y resultados de pruebas.
+- `informe-aparte/`: borrador de informe y guía de entrega, separados del código.
+- `VERIFICACION.md`: pruebas aprobadas y limitaciones pendientes.
 
 ## Fuentes técnicas
 
